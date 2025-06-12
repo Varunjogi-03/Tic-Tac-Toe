@@ -83,9 +83,6 @@ const showWinner=(winner)=>{
     msgcontainer.classList.remove("hide");
 }
 
-const changeTheme=()=>{
-   btn.classList.add("box1");
- };
 
 btn.forEach((element)=>{
     btn.addEventListener("click",()=>{
