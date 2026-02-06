@@ -57,7 +57,7 @@ const checkwinner = () => {
 
         if (p1 !== "" && p2 !== "" &&  p3 !==""){
          if( p1 === p2 && p2 === p3) {
-            console.log(`Winner is player ${p1}`);
+            console.log(`Winner is ${p1}`);
             showWinner(p1);
             disableAllButtons(); 
             return;
@@ -79,7 +79,7 @@ const enableAllButtons = () => {
 
 
 const showWinner=(winner)=>{
-    msg.innerText=`Congratulations winner is ${winner}`
+    msg.innerText=`Congratulations the winner is ${winner}`
     msgcontainer.classList.remove("hide");
 }
 
@@ -89,6 +89,7 @@ btn.forEach((element)=>{
         theme.classList.add("box1");
     })
 });
+
 
 
 
